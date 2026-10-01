@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Melissa & Alfredo - Nuestra Boda</title>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;600&family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <div class="progress-bar" id="pb"></div>
+
+<!-- ══ ENVELOPE ══ -->
+<div id="envelope-scene">
+    <p class="env-pre">Tenemos una invitación para ti</p>
+    <p class="env-title">¡Estás invitado!</p>
+    <p class="env-for">Queremos compartir contigo <span>este momento especial</span></p>
+
+    <div class="envelope-wrap" id="envWrap" onclick="openEnv()">
+    <div class="env-shadow"></div>
+    <div class="env-body">
+        <div class="env-bottom"></div>
+        <div class="env-sides"></div>
+        <div class="env-flap"></div>
+        <div class="seal">M♥A</div>
+        <div class="env-card">
+        <span class="ec-line1">Jennyfer Melissa & Alfredo</span>
+        <span class="ec-line2">20 · 11 · 2026</span>
+        </div>
+    </div>
+    </div>
+
+    <p class="tap-hint">✦ toca el sobre para abrir ✦</p>
+    <button class="open-btn" onclick="openEnv()">Abrir Invitación</button>
+</div>
+
+
+<!-- ══ BOTANICAL CORNERS ══ -->
+<svg class="bc bc-tl" id="bcTL" width="170" height="170" viewBox="0 0 170 170" xmlns="http://www.w3.org/2000/svg">
+    <g opacity=".82"><path d="M8 165 Q18 115 16 76 Q14 40 38 10" stroke="#7ba5c4" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <ellipse cx="17" cy="135" rx="17" ry="7.5" fill="#a9c8dc" opacity=".7" transform="rotate(-34,17,135)"/>
+    <ellipse cx="19" cy="135" rx="13" ry="5.5" fill="#7ba5c4" opacity=".5" transform="rotate(17,19,135)"/>
+    <ellipse cx="16" cy="106" rx="16" ry="7" fill="#a9c8dc" opacity=".72" transform="rotate(-27,16,106)"/>
+    <ellipse cx="18" cy="106" rx="12" ry="5" fill="#7ba5c4" opacity=".52" transform="rotate(15,18,106)"/>
+    <ellipse cx="17" cy="80" rx="14" ry="6" fill="#a9c8dc" opacity=".68" transform="rotate(-20,17,80)"/>
+    <ellipse cx="20" cy="56" rx="12" ry="5" fill="#7ba5c4" opacity=".58" transform="rotate(-12,20,56)"/>
+    <ellipse cx="28" cy="34" rx="10" ry="4" fill="#a9c8dc" opacity=".52" transform="rotate(-5,28,34)"/></g>
+    <ellipse cx="78" cy="68" rx="36" ry="28" fill="#cfe1ee" opacity=".18" transform="rotate(14,78,68)"/>
+    <ellipse cx="80" cy="66" rx="28" ry="22" fill="#cfe1ee" opacity=".28" transform="rotate(-7,80,66)"/>
+    <ellipse cx="64" cy="63" rx="24" ry="16" fill="#cfe1ee" opacity=".48" transform="rotate(27,64,63)"/>
+    <ellipse cx="94" cy="61" rx="22" ry="15" fill="#eef5fa" opacity=".52" transform="rotate(-20,94,61)"/>
+    <ellipse cx="78" cy="50" rx="20" ry="13" fill="#cfe1ee" opacity=".52" transform="rotate(3,78,50)"/>
+    <ellipse cx="78" cy="64" rx="15" ry="11" fill="#dcebf3" opacity=".7" transform="rotate(-5,78,64)"/>
+    <ellipse cx="80" cy="66" rx="10" ry="8" fill="#eef5fa" opacity=".82"/>
+    <circle cx="78" cy="63" r="7" fill="#dcebf3" opacity=".85"/><circle cx="78" cy="63" r="3.5" fill="#bcdaeb" opacity=".9"/>
+    <circle cx="75" cy="61" r="1.8" fill="#5a7fa0" opacity=".62"/><circle cx="79" cy="59" r="1.4" fill="#5a7fa0" opacity=".58"/><circle cx="83" cy="62" r="1.8" fill="#5a7fa0" opacity=".62"/>
+    <ellipse cx="35" cy="26" rx="17" ry="13" fill="#8bb4d1" opacity=".26" transform="rotate(17,35,26)"/>
+    <ellipse cx="35" cy="26" rx="12" ry="9" fill="#cfe1ee" opacity=".48" transform="rotate(-9,35,26)"/>
+    <ellipse cx="35" cy="26" rx="8" ry="6" fill="#dcebf3" opacity=".65"/><ellipse cx="35" cy="26" rx="4.5" ry="3.5" fill="#eef5fa" opacity=".85"/>
+    <circle cx="35" cy="26" r="2.5" fill="#bcdaeb" opacity=".9"/>
+    <circle cx="52" cy="33" r="1.2" fill="#5a7fa0" opacity=".52"/><circle cx="62" cy="46" r=".9" fill="#7ba5c4" opacity=".48"/><circle cx="46" cy="52" r="1.1" fill="#5a7fa0" opacity=".48"/><circle cx="96" cy="40" r="1" fill="#5a7fa0" opacity=".42"/>
+</svg>
+
+<svg class="bc bc-tr" id="bcTR" width="170" height="170" viewBox="0 0 170 170" xmlns="http://www.w3.org/2000/svg">
+    <g opacity=".82"><path d="M8 165 Q18 115 16 76 Q14 40 38 10" stroke="#7ba5c4" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <ellipse cx="17" cy="135" rx="17" ry="7.5" fill="#a9c8dc" opacity=".7" transform="rotate(-34,17,135)"/>
+    <ellipse cx="19" cy="135" rx="13" ry="5.5" fill="#7ba5c4" opacity=".5" transform="rotate(17,19,135)"/>
+    <ellipse cx="16" cy="106" rx="16" ry="7" fill="#a9c8dc" opacity=".72" transform="rotate(-27,16,106)"/>
+    <ellipse cx="17" cy="80" rx="14" ry="6" fill="#a9c8dc" opacity=".68" transform="rotate(-20,17,80)"/>
+    <ellipse cx="20" cy="56" rx="12" ry="5" fill="#7ba5c4" opacity=".58" transform="rotate(-12,20,56)"/>
+    <ellipse cx="28" cy="34" rx="10" ry="4" fill="#a9c8dc" opacity=".52" transform="rotate(-5,28,34)"/></g>
+    <ellipse cx="78" cy="68" rx="36" ry="28" fill="#cfe1ee" opacity=".18" transform="rotate(14,78,68)"/>
+    <ellipse cx="80" cy="66" rx="28" ry="22" fill="#cfe1ee" opacity=".28" transform="rotate(-7,80,66)"/>
+    <ellipse cx="64" cy="63" rx="24" ry="16" fill="#cfe1ee" opacity=".48" transform="rotate(27,64,63)"/>
+    <ellipse cx="94" cy="61" rx="22" ry="15" fill="#eef5fa" opacity=".52" transform="rotate(-20,94,61)"/>
+    <ellipse cx="78" cy="50" rx="20" ry="13" fill="#cfe1ee" opacity=".52" transform="rotate(3,78,50)"/>
+    <ellipse cx="78" cy="64" rx="15" ry="11" fill="#dcebf3" opacity=".7" transform="rotate(-5,78,64)"/>
+    <ellipse cx="80" cy="66" rx="10" ry="8" fill="#eef5fa" opacity=".82"/>
+    <circle cx="78" cy="63" r="7" fill="#dcebf3" opacity=".85"/><circle cx="78" cy="63" r="3.5" fill="#bcdaeb" opacity=".9"/>
+    <circle cx="75" cy="61" r="1.8" fill="#5a7fa0" opacity=".62"/><circle cx="79" cy="59" r="1.4" fill="#5a7fa0" opacity=".58"/><circle cx="83" cy="62" r="1.8" fill="#5a7fa0" opacity=".62"/>
+    <ellipse cx="35" cy="26" rx="17" ry="13" fill="#8bb4d1" opacity=".26" transform="rotate(17,35,26)"/>
+    <ellipse cx="35" cy="26" rx="12" ry="9" fill="#cfe1ee" opacity=".48" transform="rotate(-9,35,26)"/>
+    <ellipse cx="35" cy="26" rx="8" ry="6" fill="#dcebf3" opacity=".65"/><circle cx="35" cy="26" r="2.5" fill="#bcdaeb" opacity=".9"/>
+    <circle cx="52" cy="33" r="1.2" fill="#5a7fa0" opacity=".52"/><circle cx="62" cy="46" r=".9" fill="#7ba5c4" opacity=".48"/>
+</svg>
+
+<svg class="bc bc-bl" id="bcBL" width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+    <g opacity=".72"><path d="M7 142 Q16 98 14 64 Q12 33 33 8" stroke="#7ba5c4" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+    <ellipse cx="15" cy="114" rx="15" ry="6.5" fill="#a9c8dc" opacity=".68" transform="rotate(-30,15,114)"/>
+    <ellipse cx="14" cy="88" rx="14" ry="6" fill="#a9c8dc" opacity=".68" transform="rotate(-22,14,88)"/>
+    <ellipse cx="15" cy="65" rx="12" ry="5" fill="#7ba5c4" opacity=".58" transform="rotate(-15,15,65)"/>
+    <ellipse cx="20" cy="44" rx="10" ry="4" fill="#a9c8dc" opacity=".52" transform="rotate(-7,20,44)"/>
+    <ellipse cx="26" cy="26" rx="9" ry="3.5" fill="#7ba5c4" opacity=".46" transform="rotate(-2,26,26)"/></g>
+    <ellipse cx="65" cy="55" rx="30" ry="24" fill="#cfe1ee" opacity=".2" transform="rotate(11,65,55)"/>
+    <ellipse cx="54" cy="52" rx="20" ry="13" fill="#cfe1ee" opacity=".46" transform="rotate(23,54,52)"/>
+    <ellipse cx="76" cy="50" rx="18" ry="12" fill="#eef5fa" opacity=".5" transform="rotate(-16,76,50)"/>
+    <ellipse cx="65" cy="43" rx="16" ry="11" fill="#cfe1ee" opacity=".5" transform="rotate(2,65,43)"/>
+    <ellipse cx="65" cy="52" rx="11" ry="9" fill="#dcebf3" opacity=".68" transform="rotate(-4,65,52)"/>
+    <ellipse cx="66" cy="55" rx="8" ry="6" fill="#eef5fa" opacity=".8"/>
+    <circle cx="65" cy="52" r="5.5" fill="#dcebf3" opacity=".84"/><circle cx="65" cy="52" r="2.8" fill="#bcdaeb" opacity=".9"/>
+    <circle cx="62" cy="50" r="1.5" fill="#5a7fa0" opacity=".58"/><circle cx="66" cy="49" r="1.2" fill="#5a7fa0" opacity=".54"/>
+</svg>
+
+<svg class="bc bc-br" id="bcBR" width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+    <g opacity=".72"><path d="M7 142 Q16 98 14 64 Q12 33 33 8" stroke="#7ba5c4" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+    <ellipse cx="15" cy="114" rx="15" ry="6.5" fill="#a9c8dc" opacity=".68" transform="rotate(-30,15,114)"/>
+    <ellipse cx="14" cy="88" rx="14" ry="6" fill="#a9c8dc" opacity=".68" transform="rotate(-22,14,88)"/>
+    <ellipse cx="15" cy="65" rx="12" ry="5" fill="#7ba5c4" opacity=".58" transform="rotate(-15,15,65)"/>
+    <ellipse cx="20" cy="44" rx="10" ry="4" fill="#a9c8dc" opacity=".52" transform="rotate(-7,20,44)"/>
+    <ellipse cx="26" cy="26" rx="9" ry="3.5" fill="#7ba5c4" opacity=".46" transform="rotate(-2,26,26)"/></g>
+    <ellipse cx="65" cy="55" rx="30" ry="24" fill="#cfe1ee" opacity=".2" transform="rotate(11,65,55)"/>
+    <ellipse cx="54" cy="52" rx="20" ry="13" fill="#cfe1ee" opacity=".46" transform="rotate(23,54,52)"/>
+    <ellipse cx="76" cy="50" rx="18" ry="12" fill="#eef5fa" opacity=".5" transform="rotate(-16,76,50)"/>
+    <ellipse cx="65" cy="43" rx="16" ry="11" fill="#cfe1ee" opacity=".5" transform="rotate(2,65,43)"/>
+    <ellipse cx="65" cy="52" rx="11" ry="9" fill="#dcebf3" opacity=".68" transform="rotate(-4,65,52)"/>
+    <ellipse cx="66" cy="55" rx="8" ry="6" fill="#eef5fa" opacity=".8"/>
+    <circle cx="65" cy="52" r="5.5" fill="#dcebf3" opacity=".84"/><circle cx="65" cy="52" r="2.8" fill="#bcdaeb" opacity=".9"/>
+    <circle cx="62" cy="50" r="1.5" fill="#5a7fa0" opacity=".58"/><circle cx="66" cy="49" r="1.2" fill="#5a7fa0" opacity=".54"/>
+</svg>
+
+        <div id="post-envelope">
+        <!-- Contenedor de corazones flotantes -->
+        <div class="contenedor-corazones"></div>
+        <div class="container">
+            <!-- Página 1: Hero -->
+            <section class="hero-section">
+                <img src="assets/img/flores-decorativas.png" alt="Flores" class="flower-decoration">
+                <div class="main-title">¡NOS CASAMOS!</div>
+                <div class="couple-names">
+                    Jennyfer Melissa
+                    <span class="ampersand">&</span>
+                    Alfredo
+                </div>
+                <!-- Audio oculto -->
+                <audio id="cancion-boda" src="assets/audio/Un Amor Asi Love Like This - Carin Leon.mp3" preload="auto"></audio>
+                <p class="quote">
+                    "El amor no consiste en mirarse el uno al otro,
+                    <br>
+                    sino en mirar juntos en la misma dirección."
+                </p>
+                <div class="hero-photo">
+                    <img src="assets/img/Foto1.jpg" alt="Melissa y Alfredo">
+                </div>
+                <img src="assets/img/wave-bottom.png" alt="" class="wave-divider">
+            </section>
+            <!-- Página 2: Padres y Padrinos -->
+            <section class="parents-section">
+                <img src="assets/img/icono-pareja.png" alt="Pareja" class="couple-icon">
+                <p class="section-title">Con la Bendición de Dios</p>
+                <p class="section-subtitle">y nuestros queridos padres</p>
+                <div class="parent-block">
+                    <h3>Padres de la Novia:</h3>
+                    <p>Graciela Tapia Chacon</p>
+                    <p>Julio Yampi Armuto</p>
+                </div>
+                <div class="parent-block">
+                    <h3>Padres del Novio:</h3>
+                    <p>Elsa Romero de Huallpa</p>
+                    <p>Victor Huallpa Benavides</p>
+                </div>
+                <p class="section-subtitle">Y en compañía de nuestros padrinos</p>
+                <div class="parent-block">
+                    <h3>Padrino de aros:</h3>
+                    <p>Ines Ferro</p>
+                    <p>Victor Lezama</p>
+                </div>
+                <div class="parent-block">
+                    <h3>Padrino de arras y lazo:</h3>
+                    <p>Toribia Yampi Armuto</p>
+                    <p>Jose Arista</p>
+                </div>
+                <div class="parent-block">
+                    <h3>Testigos Civil:</h3>
+                    <p>Gloria Tapia Chacon</p>
+                    <p>Roy Nina Mamani</p>
+                    <p>Melin Quispe Quenaya ✟</p>
+                </div>
+                <div class="photo-couple">
+                    <img src="assets/img/Foto2.jpg" alt="Melissa y Alfredo">
+                </div>
+                <img src="assets/img/NOMBRE_ICONO_ANILLO.png" alt="" class="couple-icon">
+            </section>
+            <!-- Página 3: Fecha y Eventos -->
+            <section class="event-section">
+                <p class="invitation-text">
+                    Tenemos el agrado de invitarlos
+                    <br>
+                    a Nuestra Boda
+                </p>
+                <div class="date-display">
+                    <div class="month-text">Noviembre</div>
+                    <div class="day-number">20</div>
+                    <div class="year-text">2026</div>
+                </div>
+                <div class="day-name">Viernes</div>
+                <div class="countdown-title">Faltan:</div>
+                <div class="countdown-timer">
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="dias">61</div>
+                        <div class="countdown-label">Días</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="horas">00</div>
+                        <div class="countdown-label">Horas</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="minutos">00</div>
+                        <div class="countdown-label">Min</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="segundos">00</div>
+                        <div class="countdown-label">Seg</div>
+                    </div>
+                </div>
+                <img src="assets/img/icono-iglesia.png" alt="Iglesia" class="church-icon">
+                <div class="ceremony-title">Ceremonia Religiosa</div>
+                <div class="ceremony-details">
+                    <strong>Hora: 6:30 p.m.</strong>
+                    Iglesia de la Sagrada Familia, Plaza Mayor
+                </div>
+                <a href="https://maps.app.goo.gl/DZWY1Fbni8nZqDSL6" target="_blank" class="map-button">Ver ubicación</a>
+                <div class="ceremony-title">Recepción</div>
+                <div class="ceremony-details">
+                    <strong>Hora: 7:30 p.m.</strong>
+                    "Salon de eventos - Casa Real"
+                    <br>
+                    Av. Huayruropata 1718, Wanchaq
+                </div>
+                <a href="https://maps.app.goo.gl/CveifEGArhkw7p1T8" target="_blank" class="map-button">Ver ubicación</a>
+                <div class="event-photo">
+                    <img src="assets/img/SalonEvento.jpg" alt="salon de eventos">
+                </div>
+                <img src="assets/img/wave-bottom.png" alt="" class="wave-divider">
+            </section>
+            <!-- Página 4: Dress Code y Regalos -->
+            <section class="info-section">
+                <img src="assets/img/icono-vestimenta.png" alt="Vestimenta" class="dress-icon">
+                <div class="gift-title">Elegante</div>
+                <img src="assets/img/icono-regalo.png" alt="Regalo" class="gift-icon">
+                <div class="gift-title">Regalos</div>
+                <p class="gift-text">
+                    Lo más importante para nosotros es compartir este día contigo.
+                    <br>
+                    Tu presencia será nuestro mejor regalo,
+                    <br>
+                    y cualquier detalle que desees brindarnos será recibido con mucho cariño.
+                </p>
+
+                <!--
+                <p class="gift-text">
+                    Tu presencia es nuestro mejor regalo.
+                    <br>
+                    Si deseas obsequiarnos algo,
+                    <br>
+                    lo recibiremos con mucho cariño.
+                </p>
+                -->
+                <div class="info-photo">
+                    <img src="assets/img/Foto3.jpg" alt="Melissa y Alfredo">
+                </div>
+                <img src="assets/img/wave-bottom.png" alt="" class="wave-divider">
+            </section>
+            <!-- Página 5: Pases y Confirmación -->
+            <section class="rsvp-section">
+                <div class="passes-title">Pases</div>
+                <p class="passes-subtitle">
+                    ¿Cuántas personas asistirán?
+                    <br>
+                    (contándote a ti)
+                </p>
+                <div class="passes-circles">
+                    <button
+                        type="button"
+                        class="pass-btn"
+                        id="btn-menos"
+                        aria-label="Menos personas"
+                    >−</button>
+                    <div class="pass-circle" id="numero-pases">1</div>
+                    <button
+                        type="button"
+                        class="pass-btn"
+                        id="btn-mas"
+                        aria-label="Más personas"
+                    >+</button>
+                </div>
+                <p class="passes-text">Máximo 3 personas por invitación</p>
+
+                 
+                <div class="no-children-title"> ღ </div>
+                <strong> 
+                <p class="no-children-text">
+                    Amamos a los niños pero hemos
+                    <br>
+                    reservado sitios solo para adultos.
+                    <br>
+                    Niños, dulces sueños
+                </p>
+                </strong>
+                <div class="confirm-title">Confirmar tu asistencia</div>
+                <p class="confirm-text">
+                    tu presencia es muy importante para nosotros
+                    <br>
+                    por favor confirmarnos tu asistencia
+                    <br>
+                    hasta el 15 de Ocubre
+                </p>
+                <div class="whatsapp-buttons">
+                    <a
+                        href="https://wa.me/51958385424?text=Hola%20Melissa%20y%20Alfredo,%20confirmo%20con%20mucha%20alegr%C3%ADa%20mi%20asistencia%20%281%20persona%29.%20%C2%A1Estoy%20feliz%20de%20acompa%C3%B1arlos%20en%20este%20d%C3%ADa%20tan%20especial!%20%F0%9F%A4%8D"
+                        target="_blank"
+                        class="whatsapp-button"
+                        id="btn-confirmar"
+                    >Confirmar</a>
+                    <a
+                        href="https://wa.me/51958385424?text=Hola%20Melissa%20y%20Alfredo,%20lamentablemente%20no%20podré%20asistir"
+                        target="_blank"
+                        class="whatsapp-button"
+                        id="btn-declinar"
+                    >No asistiré</a>
+                </div>
+                <div class="final-photo">
+                    <img src="assets/img/Foto5.jpg" alt="Melissa y Alfredo">
+                </div>
+            </section>
+            <section class="info-section2">
+                <img src="assets/img/M&A.jpg" alt="Vestimenta" class="dress-icon2">
+                <p class="gift-text">
+                    Con mucha ilusión queremos vivir este
+                momento rodeados de personas que han
+                formado parte de nuestra historia.
+                Será un honor contar con tu presencia
+                </p>
+                <div class="main-title">¡TE ESPERAMOS!</div>
+                <img src="assets/img/wave-bottom.png" alt="" class="wave-divider">
+            </section>
+        </div>
+        </div>
+        <script src="js/musica.js"></script>
+        <script src="js/sobre.js"></script>
+        <script src="js/contador.js"></script>
+        <script src="js/corazones.js"></script>
+        <script src="js/pases.js"></script>
+    </body>
+</html>
