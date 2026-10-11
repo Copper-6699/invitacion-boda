@@ -1,7 +1,7 @@
 // El invitado elige cuántas personas asistirán con los botones − / +.
-// Mínimo 1, máximo 3 por invitación.
+// Mínimo 1, máximo 2 por invitación.
 const MIN_PERSONAS = 1;
-const MAX_PERSONAS = 3;
+const MAX_PERSONAS = 2;
 const NUMERO_WHATSAPP = '51958385424';
 
 let cantidad = MIN_PERSONAS;
